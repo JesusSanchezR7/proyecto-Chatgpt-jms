@@ -44,11 +44,11 @@ export const useVoiceRecognition = () => {
         } catch (e) {
             console.error(e);
         }
-    }, [resetState]);  // --
+    }, [resetState]); 
      
     const stopRecognizing = useCallback(async () => {
         try {
-            await Voice.stop(); // Invoca la función Voice.stop
+            await Voice.stop(); 
         } catch (e) {
             console.error(e);
         }
